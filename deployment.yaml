@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: 1.30
 kind: Deployment
 metadata:
   name: my-springboot-deployment
@@ -20,7 +20,7 @@ spec:
         - containerPort: 8085
 # service type loadbalancer       
 ---
-apiVersion: v1
+apiVersion: 1.30
 kind: Service
 metadata:
   labels:
